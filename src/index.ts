@@ -1,10 +1,7 @@
 const express:Function = require('express')
+const cors:Function = require('cors')
 const app:any = express()
 const port:number = 3001
-
-type Express = {
-  express: () => void 
-}
 
 app.get('/', (request:string, response:any) => {
   response.send('Hello World!')
